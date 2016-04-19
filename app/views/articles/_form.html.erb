@@ -1,0 +1,35 @@
+
+<% if @article.errors.any? %>
+<div>
+<h3>The following errors prevented the article from getting created</h3>
+</div>
+<div>
+  <ol type="1">
+
+     <% @article.errors.full_messages.each do |msg| %>
+     <li><font color= "red"><%= msg %></font></li>
+     <% end %>
+     
+</ol>
+</div>
+<% end %>
+
+
+
+<%= form_for @article do |f| %>
+<p>
+  <%= f.label :title %></br>
+  <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description %></br>
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.submit class: 'button' %> | <%= link_to "Back to articles listing", articles_path, class: 'button' %>
+  </p>
+  
+<% end %>
+
+
+

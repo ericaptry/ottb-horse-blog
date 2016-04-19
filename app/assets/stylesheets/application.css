@@ -1,0 +1,353 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+#top {
+    background-color: #404A52;
+    border-radius: 0px;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    left:0px;
+    top: 0;
+}
+ul {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+  overflow-x: hidden;
+}
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	  font-weight: 100;
+	  font-size: 12px;
+}
+
+ .header1{
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	
+}
+
+ li a:hover:not(.active) {
+    background-color: #BA638E; /*BA638E CC6359*/
+}
+
+ .active {
+    background-color: #BA638E;
+}
+
+input[type=text1] {
+    width: 100px;
+    box-sizing: border-box;
+    border: 0px solid #CCC;
+    border-radius: 0px;
+    font-size: 12px;
+    background-color: white;
+    background-image: url("../Downloads/searchicon.png");
+    background-position: 10px 10px; 
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+ input[type=text1]:focus {
+    width: 100%;
+}
+
+
+.header2 {
+
+	text-align: center;
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-style: normal;
+	font-size: 45px;
+	font-weight: 100;
+	color: #DEDCDC;
+	/*padding: 10px;*/
+}
+
+#separator{
+	
+    margin: 0 auto;
+    padding: 1px;
+    z-index: 1000;
+    overflow-x: hidden;
+    background-color: #5C554B;
+    border-radius: 0px;
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    left: 0;
+	}
+	
+#line {
+  	
+    padding: 1px;
+    background-color: #459099;
+    border-radius: 0px;
+    position: fixed;
+    z-index: 0;
+    clear: both;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    /*top: 70px;*/
+    
+    }
+	
+/*.main{
+	background-color: #DEDCDC;
+	padding: 1px;
+	background-color: white;
+	display: block;
+    color: white;
+    border-radius: 0px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-weight: 100;
+	font-size: 12px;
+	
+	height:1500px;
+	background-image: url("../Downloads/horseback.png");
+    background-repeat: no-repeat;
+    background-size: 1100px 700px;
+    background-attachment: fixed; 
+    background-position: center bottom;
+ 
+	
+}*/
+
+td a:link {
+  color:white;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-weight: 100;
+  text-decoration:none
+}
+td a:visited {
+  color:white; 
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-weight: 100;
+  background-color:transparent; 
+  text-decoration:none}
+td a:hover   {
+  color:white;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-weight: 100;
+  background-color:transparent; 
+  text-decoration:none}
+td a:active  {
+  color:white;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-weight: 100;
+  background-color:transparent; 
+  text-decoration:none}
+
+
+.listing {
+    padding: 1px;
+    background-color: #E9BFC1;
+    border-radius: 0px;
+    position: fixed;
+    z-index: 1000;
+    top: 150px;
+    width: 100%;
+    left:0;
+    border: 0px;
+    padding:5px;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    font-size: 14px;
+    color: #883E40;
+}
+
+
+/*p {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-weight: 100;
+	font-size: 12px;
+}
+
+ .title{
+ font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+ text-align: center;
+ font-style: normal;
+ font-size: 12px;
+ color: #828281
+ position: relative;
+ 
+}*/
+
+/*table.main{
+  
+  
+  }
+ 
+ table.main th, td { 
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-weight: 100;
+	font-size: 12px;
+	text-align: center;
+	position: relative;
+	top: 180px;
+	width:50%;
+    border:1px solid #d4d4d4;
+    padding:5px;
+}
+table.main th {
+} */
+
+.tablescroll{
+  
+  padding-bottom: 250px;
+  padding-top: 100px;
+  
+
+}
+
+.ArticleTable {
+  position: relative;
+  left: 310px;
+  top:170px;
+	margin: 10px;
+	padding:10px;
+	width:50%;
+	border:0px solid #ffffff;
+}
+
+.ArticleTable table{
+  border-collapse: collapse;
+  border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin: 0 auto;
+	padding:0px;
+}
+	
+.ArticleTable tr:hover td{
+	background-color:#522C72;
+}
+.ArticleTable table tr:hover td{
+	background-color:#522C72;
+}
+.ArticleTable td{
+	vertical-align:middle;
+	background-color:#9480aa;
+	border:1px solid #ffffff;
+	border-width:0px 1px 1px 0px;
+	text-align: center;
+	padding:15px;
+	font-size:14px;
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-weight: 100;
+	color:#ffffff;
+}
+.ArticleTable tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}
+.ArticleTable tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}
+.ArticleTable tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.ArticleTable tr:first-child td{
+  background-color:#9480aa;
+	border:0px solid #ffffff;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-weight: 100;
+	color:#ffffff;
+}
+.ArticleTable tr:first-child:hover td{
+  background-color:#522C72;
+}
+.ArticleTable tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.ArticleTable tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+
+textarea {
+    width: 600px;
+    height: 100px;
+}
+.button {
+    background-color: #8FBFE5;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	  font-weight: 100;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.form {
+    padding: 0px;
+    background-color: #909090;
+    border-radius: 0px;
+    position: relative;
+    padding-top: 190px;
+    left: 190px;
+    width: 70%;
+    height:100vh;
+    border: 0px;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 12px;
+    color: white;
+}
+
+.login {
+    padding: 0px;
+    background-color: #C1A1E0;
+    border-radius: 0px;
+    position: relative;
+    padding-top: 300px;
+    left: 140px;
+    width: 70%;
+    height: 128px;
+    border: 0px;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 12px;
+    color: white;
+}
