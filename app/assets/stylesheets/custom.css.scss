@@ -1,0 +1,161 @@
+$navbar-default-bg: #5D6165;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$gray-base: #000;
+$article-title:$gray-base;
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.navbar .nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: -0.5px;
+}
+
+.navbar{
+   border-radius: 0px;
+}
+
+.btn-default {
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 0px;
+  opacity: 0.9;
+  filter: alpha(opacity=50);
+  font-size: 0.9em;
+  letter-spacing: -0.5px;
+}
+.form-control{
+  border-radius: 0px;
+  size: 5px;
+  
+}
+
+#logo{
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  font-weight: thin;
+  padding-left: 20px;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.center{
+  text-align: right;
+  padding-right: 20px;
+ 
+}
+
+.jumbotron{
+  background-image: asset-url('tusan.jpg');
+  background-size: cover;
+  padding-top: 10%;
+  padding-bottom: 30%;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+  
+}
+
+.jumbotron h1{
+  color: #fff;
+  text-align: right;
+  padding-right: 10px;
+  font-weight: thin;
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+
+}
+
+.btn-xlarge{
+   background-color: #E9BFC1;
+   opacity: 0.9;
+   filter: alpha(opacity=50);
+   border-color: #E9BFC1;
+   font-size: 1.7em;
+   color:#fff;
+
+}
+
+.btn-xlarge:hover {
+    background-color: #E9BFC1;
+    border-color: #E9BFC1;
+    color:#fff;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #404A52;
+  color:#777;
+  
+}
+
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 20px;
+  text-align: left;
+}
+
+footer a{
+  color:#777;
+}
+
+footer a:hover {
+  color: #777;
+  text-decoration:none;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+  
+footer ul li {
+  float: right;
+  margin-left:15px;
+}
+
+.article-title {
+  color:$gray-base;
+  font-weight: normal;
+  font-size: 1.5em;
+  text-transform: uppercase;
+
+ 
+
+}
+
+.article-body {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.listing {
+  list-style: none;
+  padding-left: 450px;
+
+}
+

@@ -1,49 +1,65 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-<div id="top">
-<ul>
-  <li style="float:left"><a class="header1" href="/">OTTB United</a></li>
-  <li style="float:left"><a href="/articles">Articles</a></li>
-  <li style="float:left"><a href="#categories">Users</a></li>
-  <li style="float:left"><a href="#categories">Categories</a></li>
-  <li style="float:left; margin: 0 0 0px 20px"><a<form><input type="text1" name="search" placeholder="Search.."></form></a></li>
-  <li style="float:right"><a href="#about">Log in</a></li>
-  <li style="float:right"><a href="#about">Sign Up</a></li>
+<h2 align="center"><%= @article.title %></h2>
+
+<div class="well col-xs-8 col-xs-offset-2">
+  
+  <%= image_tag @article.image.url(:medium) %>
+
+
+<h4 class="center description"><strong>Description:</strong></h4>
+
+<hr>
+
+<%= simple_format(@article.description) %>
+
+<% if @article.user %>
+
+<ul class="listing">
+
+<div class="row center">
+
+<div class="col-md-4 col-md-offset-4">
+
+
+<li><%= link_to gravatar_for(@article.user), user_path(@article.user) %></li>
+
+<li class="article-title">
+
+<%= link_to @article.user.username, user_path(@article.user) %>
+
+</li>
+
+<li><small>
+
+<%= pluralize(@article.user.articles.count, "article") if @article.user.articles %>
+
+</small></li>
+
+</div>
+
+</div>
+
 </ul>
+
+<% end %>
+
+<div class="article-actions">
+
+<% if logged_in? && current_user == @article.user %>
+
+
+<%= link_to "Edit this article", edit_article_path(@article), class: "btn btn-xs btn-primary" %>
+
+<%= link_to "Delete this article", article_path(@article), method: :delete,
+
+data: { confirm: "Are you sure you want to delete the article?"},
+
+class: "btn btn-xs btn-danger" %>
+
+<% end %>
+
+<%= link_to "View all articles", articles_path, class: "btn btn-xs btn-success" %>
+
 </div>
 
-<div id= "separator">
-<h2 class= "header2">OTTB United</h2>
 </div>
 
-<div class= "listing">
-<h3>Showing selected article</h3>
-</div>
-
-<div class= "form">
-
-<p>Title: <%= @article.title %></p>
-<p>Description: <%= @article.description %></p>
-
-<%= link_to "Edit this article", edit_article_path(@article), class: 'button' %> |
-
-<%= link_to "Back to articles listing", articles_path, class: 'button' %>
- 
-</div>
-
-
-
-<div id= "line">
-<ul>
-  <li style="float:right; margin: 0 0 0px 0px"><a href="#about">About</a></li>
-  <li style="float:right"><a href="#about">Contact</a></li>
-</ul>
-</div>
-
-
-
-</body>
-</html>
