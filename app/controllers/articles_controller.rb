@@ -8,13 +8,13 @@ before_action :require_same_user, only: [:edit, :update, :destroy]
 
 def index
 
-@articles = Article.paginate(page: params[:page], per_page: 5)
+  @articles = Article.paginate(page: params[:page], per_page: 5)
 
 end
 
 def new
 
-@article = Article.new
+  @article = Article.new
 
 end
 
@@ -24,37 +24,37 @@ end
 
 def create
 
-@article = Article.new(article_params)
+  @article = Article.new(article_params)
 
-@article.user = current_user
+  @article.user = current_user
 
-if @article.save
+  if @article.save
 
-flash[:success] = "Article was successfully created"
+    flash[:success] = "Article was successfully created"
 
-redirect_to article_path(@article)
+    redirect_to article_path(@article)
 
-else
+  else
 
-render 'new'
+    render 'new'
 
-end
+  end
 
 end
 
 def update
 
-if @article.update(article_params)
+  if @article.update(article_params)
 
-flash[:success] = "Article was successfully updated"
+    flash[:success] = "Article was successfully updated"
 
-redirect_to article_path(@article)
+    redirect_to article_path(@article)
 
-else
+  else
 
-render 'edit'
+    render 'edit'
 
-end
+  end
 
 end
 
@@ -64,37 +64,37 @@ end
 
 def destroy
 
-@article.destroy
+    @article.destroy
 
-flash[:danger] = "Article was successfully deleted"
+    flash[:danger] = "Article was successfully deleted"
 
-redirect_to articles_path
+    redirect_to articles_path
 
 end
 
 private
 
-def set_article
+  def set_article
 
-@article = Article.find(params[:id])
+    @article = Article.find(params[:id])
 
-end
+  end
 
 def article_params
 
-params.require(:article).permit(:title, :description, :image)
+  params.require(:article).permit(:title, :description, :image)
 
 end
 
 def require_same_user
 
-if current_user != @article.user
+  if current_user != @article.user
 
-flash[:danger] = "You can only edit or delete your own articles"
+    flash[:danger] = "You can only edit or delete your own articles"
 
-redirect_to root_path
+    redirect_to root_path
 
-end
+  end
 
 end
 
