@@ -1,5 +1,3 @@
-== README
-
-ottb-horse-blog
+== ottb-horse-blog 
 
 https://ottb-horse-blog.herokuapp.com
